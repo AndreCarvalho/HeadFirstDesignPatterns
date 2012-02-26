@@ -19,7 +19,9 @@
         }
     }
 
-    class Mocha : CondimentDecorator
+    #region Decorators implementations
+
+    public class Mocha : CondimentDecorator
     {
         public Mocha(Beverage beverage) : base(beverage)
         {
@@ -36,7 +38,7 @@
         }
     }
 
-    class Milk : CondimentDecorator
+    public class Milk : CondimentDecorator
     {
         public Milk(Beverage beverage) : base(beverage)
         {
@@ -52,4 +54,7 @@
             get { return Beverage.Cost + 0.5; }
         }
     }
+
+    #endregion
+
 }

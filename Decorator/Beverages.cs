@@ -9,7 +9,9 @@
         public abstract double Cost { get; }
     }
 
-    class Decaf : Beverage
+    #region Components implementations
+
+    public class Decaf : Beverage
     {
         public override string Description
         {
@@ -22,7 +24,7 @@
         }
     }
 
-    class Espresso : Beverage
+    public class Espresso : Beverage
     {
         public override string Description
         {
@@ -35,7 +37,7 @@
         }
     }
 
-    class DarkRoast : Beverage
+    public class DarkRoast : Beverage
     {
         public override string Description
         {
@@ -48,7 +50,7 @@
         }
     }
 
-    class HouseBlend : Beverage
+    public class HouseBlend : Beverage
     {
         public override string Description
         {
@@ -60,4 +62,7 @@
             get { return 2.5; }
         }
     }
+
+    #endregion
+
 }
